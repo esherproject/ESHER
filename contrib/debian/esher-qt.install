@@ -1,0 +1,6 @@
+usr/local/bin/esher-qt usr/bin
+share/pixmaps/esher32.xpm usr/share/pixmaps
+share/pixmaps/esher16.xpm usr/share/pixmaps
+share/pixmaps/esher128.png usr/share/pixmaps
+debian/esher-qt.desktop usr/share/applications
+debian/esher-qt.protocol usr/share/kde4/services/

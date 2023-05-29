@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=Esher 
+Comment=Esher P2P Cryptocurrency
+Comment[fr]=Esher, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Esher, eşten eşe kriptografik sanal para birimi
+Exec=esher-qt %u
+Terminal=false
+Type=Application
+Icon=esher128
+MimeType=x-scheme-handler/esher;
+Categories=Office;Finance;
+StartupWMClass=esher-qt
