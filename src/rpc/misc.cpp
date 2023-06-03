@@ -243,7 +243,7 @@ public:
             obj.push_back(Pair("iscompressed", vchPubKey.IsCompressed()));
             if(vchPubKey.IsCompressed()) {
                 vchPubKey.Decompress();
-                obj.push_back(Pair("pubkey", HexStr(vchPubKey)));
+                obj.push_back(Pair("decompressedpubkey", HexStr(vchPubKey)));
             }
         }
         return obj;
@@ -383,7 +383,7 @@ UniValue validateaddress(const JSONRPCRequest& request)
             "  \"hex\" : \"hex\",                (string, optional) The redeemscript for the P2SH address -only if standard address-\n"
             "  \"pubkey\" : \"publickey hex\",    (string) The hex value of the raw public key -only if standard address-\n"
             "  \"iscompressed\" : true|false,    (boolean) If the address is compressed -only if standard address-\n"
-            "  (\"pubkey\" : \"decompressed publickey hex\",    (string) The hex value of the decompressed raw public key -only if standard address)-\n"
+            "  (\"decompressedpubkey\" : \"decompressed publickey hex\",    (string) The hex value of the decompressed raw public key -only if standard address)-\n"
             "  \"account\" : \"account\"         (string) DEPRECATED. The account associated with the address, \"\" is the default account\n"
             "}\n"
 
